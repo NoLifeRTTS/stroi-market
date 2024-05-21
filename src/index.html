@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <html lang="ru">
+    @@include('html/head.html', {
+        'title': 'SITE'
+    })
+    <body>
+        <div class="wrapper">
+            <div class="header-wrap">
+                @@include('html/header.html', {})
+                @@include('html/firstBlock.html', {})
+            </div>
+            <div class="navigation__list mob-list">
+                <div class="list-item">
+                    <div class="list-img">
+                        <img src="@img/header/menu-contact.svg" alt="">
+                    </div>
+                    <p class="list-text">
+                        Контакты
+                    </p>
+                </div>
+                <div class="list-item">
+                    <div class="list-img">
+                        <img src="@img/header/menu-pay.svg" alt="">
+                    </div>
+                    <p class="list-text">
+                        Оплата
+                    </p>
+                </div>
+                <div class="list-item">
+                    <div class="list-img">
+                        <img src="@img/header/menu-delivery.svg" alt="">
+                    </div>
+                    <p class="list-text">
+                        Доставка
+                    </p>
+                </div>
+                <div class="list-item">
+                    <div class="list-img">
+                        <img src="@img/header/menu-vacancies.svg" alt="">
+                    </div>
+                    <p class="list-text">
+                        Вакансии
+                    </p>
+                </div>
+                <div class="list-item">
+                    <div class="list-img">
+                        <img src="@img/header/menu-rent.svg" alt="">
+                    </div>
+                    <p class="list-text">
+                        Аренда
+                    </p>
+                </div>
+            </div>
+            <main class="main"> 
+                @@include('html/gallery.html', {})
+                @@include('html/banner.html', {})
+                <!-- @@include('html/ExCentered-gallery.html', {})
+                @@include('html/ExGallery.html', {})
+                @@include('html/ExAccordion.html', {}) -->
+            </main>
+    
+            <!-- @@include('html/ExFooter.html', {}) -->
+            @@include('html/script.html', {})
+        </div>
+    </body>
+</html> 
